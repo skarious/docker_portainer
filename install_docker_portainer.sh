@@ -28,5 +28,5 @@ sudo docker run -d -p 9000:9000 --name portainer --restart always \
   portainer/portainer-ce
 
 # Mostrar información de acceso
-echo "Docker y Portainer han sido instalados y configurados."
-echo "Puedes acceder a Portainer a través de la siguiente URL: http://$(hostname -I | awk '{print $1}'):9000"
+echo -e "\e[32mDocker y Portainer han sido instalados y configurados."
+echo -e "Puedes acceder a Portainer a través de la siguiente URL: http://$(hostname -I | awk '{print $1}'):9000\e[0m"
